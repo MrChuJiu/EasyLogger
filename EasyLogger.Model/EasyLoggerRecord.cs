@@ -21,7 +21,6 @@ namespace EasyLogger.Model
         /// <summary>
         /// 状态-成功、失败、警告等
         /// </summary>
-        //public LogState LogState { get; set; }
         public string LogState { get; set; }
         /// <summary>
         /// 标题
