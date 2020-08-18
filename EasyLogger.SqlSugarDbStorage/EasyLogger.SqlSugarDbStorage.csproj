@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EasyLogger.DbStorage\EasyLogger.DbStorage.csproj" />
+    <ProjectReference Include="..\EasyLogger.Model\EasyLogger.Model.csproj" />
   </ItemGroup>
 
 </Project>

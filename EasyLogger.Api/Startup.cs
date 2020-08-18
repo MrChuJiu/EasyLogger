@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using AutoMapper;
 using EasyLogger.Api.AutoMapper;
 using EasyLogger.Api.EasyTools;
-using EasyLogger.Api.Model;
 using EasyLogger.DbStorage.Interface;
 using EasyLogger.SqlSugarDbStorage;
 using EasyLogger.SqlSugarDbStorage.Impl;
@@ -21,7 +20,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using SqlSugar;
+using EasyLogger.SqlSugarDbStorage;
 using SqlSugarProvider = EasyLogger.SqlSugarDbStorage.Impl.SqlSugarProvider;
+using EasyLogger.Model;
 
 namespace EasyLogger.Api
 {
@@ -53,11 +54,10 @@ namespace EasyLogger.Api
             #endregion
 
             #region SqlSugar
+            // 改造一下把 自己的注入部分封装起来
             var defaultDbPath = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), $"{Configuration["EasyLogger:DbName"]}.db");
-
-            services.AddSingleton<ISqlSugarProvider>(new SqlSugarProvider(new SqlSugarSetting()
+            services.AddSqlSugarDbStorage(new SqlSugarSetting()
             {
-
                 Name = SqlSugarDbStorageConsts.DefaultProviderName,
                 ConnectionString = @$"Data Source={defaultDbPath}",
                 DatabaseType = DbType.Sqlite,
@@ -65,33 +65,25 @@ namespace EasyLogger.Api
                 {
                     Console.WriteLine($"sql:{sql}");
                 }
-
-            }));
-   
-            services.AddTransient(typeof(ISqlSugarRepository<,>), typeof(SqlSugarRepository<,>));
-            services.AddTransient(typeof(IDbRepository<,>), typeof(SqlSugarRepository<,>));
-            services.AddSingleton<ISqlSugarProviderStorage, DefaultSqlSugarProviderStorage>();
+            });
             #endregion
 
             #region 默认创建基础数据库 和  时间数据库
 
             if (!File.Exists(defaultDbPath))
             {
-                var db = new SqlSugarClient(new ConnectionConfig()
-                {
-                    ConnectionString = @$"Data Source={defaultDbPath}",
-                    DbType = DbType.Sqlite,
-                    IsAutoCloseConnection = true, // 自动释放数据务，如果存在事务，在事务结束后释放
-                    InitKeyType = InitKeyType.Attribute// 从实体特性中读取主键自增列信息
-                });
-
-                db.CodeFirst.BackupTable().InitTables<EasyLoggerProject>();
-
-                db.Dispose();
+                var partition = services.BuildServiceProvider().GetService<IPartitionDbTableFactory>();
+                partition.DbTableCreate(defaultDbPath, true);
             }
+
+            var startUpDbPath = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), $"{Configuration["EasyLogger:DbName"]}-{DateTime.Now.ToString("yyyy-MM")}.db");
+            if (!File.Exists(startUpDbPath))
+            {
+                var partition = services.BuildServiceProvider().GetService<IPartitionDbTableFactory>();
+                partition.DbTableCreate(startUpDbPath, false);
+            }
+
             #endregion
-
-
 
             services.AddControllers();
         }
@@ -127,9 +119,6 @@ namespace EasyLogger.Api
             //    var sugarClient = sqlStorage.GetByName(null, SqlSugarDbStorageConsts.DefaultProviderName).Sugar;
             //    Console.WriteLine("查看sugarClient");
             //});
-
-         
-
 
 
             app.UseEndpoints(endpoints =>

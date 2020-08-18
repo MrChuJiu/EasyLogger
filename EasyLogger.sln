@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyLogger.Api", "EasyLogger.Api\EasyLogger.Api.csproj", "{99215837-5A5B-4739-A887-30C41511A74A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyLogger.Api", "EasyLogger.Api\EasyLogger.Api.csproj", "{99215837-5A5B-4739-A887-30C41511A74A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyLogger.DbStorage", "EasyLogger.DbStorage\EasyLogger.DbStorage.csproj", "{AE8B7F81-5F90-482B-B80F-9A2AE1A81184}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyLogger.DbStorage", "EasyLogger.DbStorage\EasyLogger.DbStorage.csproj", "{AE8B7F81-5F90-482B-B80F-9A2AE1A81184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyLogger.SqlSugarDbStorage", "EasyLogger.SqlSugarDbStorage\EasyLogger.SqlSugarDbStorage.csproj", "{75EF50BE-E5F9-4B80-B8E2-54B3088A55B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyLogger.SqlSugarDbStorage", "EasyLogger.SqlSugarDbStorage\EasyLogger.SqlSugarDbStorage.csproj", "{75EF50BE-E5F9-4B80-B8E2-54B3088A55B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyLogger.Model", "EasyLogger.Model\EasyLogger.Model.csproj", "{5A047636-380C-4D67-947D-AA687CD3E7AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{75EF50BE-E5F9-4B80-B8E2-54B3088A55B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75EF50BE-E5F9-4B80-B8E2-54B3088A55B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75EF50BE-E5F9-4B80-B8E2-54B3088A55B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A047636-380C-4D67-947D-AA687CD3E7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A047636-380C-4D67-947D-AA687CD3E7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A047636-380C-4D67-947D-AA687CD3E7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A047636-380C-4D67-947D-AA687CD3E7AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

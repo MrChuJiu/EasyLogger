@@ -1,15 +1,14 @@
-﻿using EasyLogger.DbStorage.Interface;
-using SqlSugar;
+﻿
+using EasyLogger.DbStorage.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EasyLogger.Api.Model
+namespace EasyLogger.Model
 {
     public class EasyLoggerProject: IDbEntity<int>
     {
-        [SugarColumn(IsNullable = false, IsPrimaryKey = true, IsIdentity = true)]
         public int Id { get; set; }
         /// <summary>
         /// 项目名称

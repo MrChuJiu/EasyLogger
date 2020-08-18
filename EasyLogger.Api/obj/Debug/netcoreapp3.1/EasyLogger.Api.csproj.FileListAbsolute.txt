@@ -397,3 +397,5 @@ C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\staticwebassets\EasyLogger.Api.StaticWebAssets.xml
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.dll
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.pdb
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\EasyLogger.Model.dll
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\EasyLogger.Model.pdb

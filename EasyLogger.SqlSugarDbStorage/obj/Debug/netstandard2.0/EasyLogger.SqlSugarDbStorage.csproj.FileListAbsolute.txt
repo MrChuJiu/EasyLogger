@@ -42,3 +42,5 @@ C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.csproj.CopyComplete
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.dll
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.pdb
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.Model.dll
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.Model.pdb

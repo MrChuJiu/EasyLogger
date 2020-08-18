@@ -77,15 +77,5 @@
             系统编码
             </summary>
         </member>
-        <member name="P:EasyLogger.Api.Model.EasyLoggerProject.Name">
-            <summary>
-            项目名称
-            </summary>
-        </member>
-        <member name="P:EasyLogger.Api.Model.EasyLoggerProject.Code">
-            <summary>
-            系统编码
-            </summary>
-        </member>
     </members>
 </doc>

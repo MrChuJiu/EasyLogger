@@ -2332,11 +2332,25 @@
           "bin/placeholder/EasyLogger.DbStorage.dll": {}
         }
       },
+      "EasyLogger.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "EasyLogger.DbStorage": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EasyLogger.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EasyLogger.Model.dll": {}
+        }
+      },
       "EasyLogger.SqlSugarDbStorage/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "EasyLogger.DbStorage": "1.0.0",
+          "EasyLogger.Model": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "3.1.7",
           "sqlSugarCore": "5.0.0.15"
         },
@@ -7429,6 +7443,11 @@
       "type": "project",
       "path": "../EasyLogger.DbStorage/EasyLogger.DbStorage.csproj",
       "msbuildProject": "../EasyLogger.DbStorage/EasyLogger.DbStorage.csproj"
+    },
+    "EasyLogger.Model/1.0.0": {
+      "type": "project",
+      "path": "../EasyLogger.Model/EasyLogger.Model.csproj",
+      "msbuildProject": "../EasyLogger.Model/EasyLogger.Model.csproj"
     },
     "EasyLogger.SqlSugarDbStorage/1.0.0": {
       "type": "project",
