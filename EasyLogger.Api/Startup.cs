@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using EasyLogger.Api.AutoMapper;
 using EasyLogger.Api.EasyTools;
 using EasyLogger.Api.Model;
 using EasyLogger.DbStorage.Interface;
@@ -17,6 +19,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using SqlSugar;
 using SqlSugarProvider = EasyLogger.SqlSugarDbStorage.Impl.SqlSugarProvider;
 
@@ -30,10 +33,24 @@ namespace EasyLogger.Api
         }
 
         public IConfiguration Configuration { get; }
-
+        public string SwaggerName = "v1";
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            #region AutoMapper
+            services.AddAutoMapper(typeof(EntityToViewModelMappingProfile), typeof(ViewModelToEntityMappingProfile));
+            #endregion
+
+            #region Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc(SwaggerName, new OpenApiInfo { Title = "EasyLogger", Description = "日志记录教程", Version = "v1" });
+                var basePath = AppContext.BaseDirectory;
+                var xmlPath = Path.Combine(basePath, "EasyLogger.Api.xml");
+                c.IncludeXmlComments(xmlPath, true);
+            });
+            #endregion
 
             #region SqlSugar
             var defaultDbPath = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), $"{Configuration["EasyLogger:DbName"]}.db");
@@ -75,6 +92,7 @@ namespace EasyLogger.Api
             #endregion
 
 
+
             services.AddControllers();
         }
 
@@ -87,6 +105,17 @@ namespace EasyLogger.Api
             }
 
             app.UseHttpsRedirection();
+
+            #region Swagger
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint($"/swagger/{SwaggerName}/swagger.json", SwaggerName);
+                c.RoutePrefix = string.Empty;
+            });
+            #endregion
+
 
             app.UseRouting();
 

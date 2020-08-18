@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
+      "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
       "projectName": "EasyLogger.DbStorage",
-      "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
+      "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
       "packagesPath": "C:\\Users\\HDONG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\obj\\",
+      "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

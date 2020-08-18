@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AutoMapper;
+using EasyLogger.Api.Dtos.EasyLoggerProjectDto;
+using EasyLogger.Api.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,11 +14,6 @@ namespace EasyLogger.Api.AutoMapper
         {
             CreateMap<EasyLoggerProject, EasyLoggerProjectListDto>();
             CreateMap<EasyLoggerProject, EasyLoggerProjectEditDto>();
-
-
-            CreateMap<EasyLoggerRecord, EasyLoggerRecordListDto>();
-            CreateMap<EasyLoggerRecord, EasyLoggerRecordEditDto>();
-
         }
     }
 }

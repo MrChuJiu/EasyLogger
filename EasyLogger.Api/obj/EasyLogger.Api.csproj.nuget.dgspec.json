@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj": {}
+    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj": {
+    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj",
+        "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj",
         "projectName": "EasyLogger.Api",
-        "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj",
+        "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.Api\\EasyLogger.Api.csproj",
         "packagesPath": "C:\\Users\\HDONG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.Api\\obj\\",
+        "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj": {
-                "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj"
+              "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj": {
+                "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj": {
+    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
+        "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
         "projectName": "EasyLogger.DbStorage",
-        "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
+        "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
         "packagesPath": "C:\\Users\\HDONG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\obj\\",
+        "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj": {
+    "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
+        "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
         "projectName": "EasyLogger.SqlSugarDbStorage",
-        "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
+        "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
         "packagesPath": "C:\\Users\\HDONG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\obj\\",
+        "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -171,8 +171,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj": {
-                "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLoggerArticle\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj"
+              "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj": {
+                "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj"
               }
             }
           }

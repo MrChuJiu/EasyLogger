@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EasyLogger.Api.Dtos.EasyLoggerProjectDto;
 using EasyLogger.Api.Model;
 using System;
 using System.Collections.Generic;

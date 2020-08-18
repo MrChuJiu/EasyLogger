@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyLogger.Api</name>
+    </assembly>
+    <members>
+        <member name="M:EasyLogger.Api.Controllers.ProjectController.GetEasyLoggerProjectAsync(EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectInput)">
+            <summary>
+            获取项目列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyLogger.Api.Controllers.ProjectController.PostAsync(EasyLogger.Api.Dtos.EasyLoggerProjectDto.CreateOrUpdateEasyLoggerProjectInput)">
+            <summary>
+            添加修改
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyLogger.Api.Controllers.ProjectController.Create(EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectEditDto)">
+            <summary>
+            添加
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyLogger.Api.Controllers.ProjectController.Update(EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectEditDto)">
+            <summary>
+            编辑
+            </summary>
+        </member>
+        <member name="M:EasyLogger.Api.Controllers.ProjectController.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectEditDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectEditDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectEditDto.Code">
+            <summary>
+            系统编码
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectInput.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectInput.Code">
+            <summary>
+            系统编码
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectListDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectListDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectListDto.Code">
+            <summary>
+            系统编码
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Model.EasyLoggerProject.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Model.EasyLoggerProject.Code">
+            <summary>
+            系统编码
+            </summary>
+        </member>
+    </members>
+</doc>
