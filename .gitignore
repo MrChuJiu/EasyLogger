@@ -1,1 +1,4 @@
 /.vs
+/EasyLogger.Api/bin/Debug
+/EasyLogger.DbStorage/bin/Debug
+/EasyLogger.SqlSugarDbStorage/bin/Debug
