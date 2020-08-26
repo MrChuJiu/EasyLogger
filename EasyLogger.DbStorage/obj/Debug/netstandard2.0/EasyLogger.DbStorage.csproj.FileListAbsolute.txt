@@ -30,3 +30,11 @@ C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstand
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.dll
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.pdb
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.csprojAssemblyReference.cache
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\bin\Debug\netstandard2.0\EasyLogger.DbStorage.deps.json
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\bin\Debug\netstandard2.0\EasyLogger.DbStorage.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\bin\Debug\netstandard2.0\EasyLogger.DbStorage.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.csprojAssemblyReference.cache
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.AssemblyInfoInputs.cache
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.AssemblyInfo.cs
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.DbStorage\obj\Debug\netstandard2.0\EasyLogger.DbStorage.pdb

@@ -9,3 +9,14 @@ C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.csproj.CopyComplete
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.dll
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\bin\Debug\netstandard2.0\EasyLogger.Model.deps.json
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\bin\Debug\netstandard2.0\EasyLogger.Model.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\bin\Debug\netstandard2.0\EasyLogger.Model.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\bin\Debug\netstandard2.0\EasyLogger.DbStorage.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\bin\Debug\netstandard2.0\EasyLogger.DbStorage.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.csprojAssemblyReference.cache
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.AssemblyInfoInputs.cache
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.AssemblyInfo.cs
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.csproj.CopyComplete
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.Model\obj\Debug\netstandard2.0\EasyLogger.Model.pdb

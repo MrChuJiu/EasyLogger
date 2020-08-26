@@ -179,32 +179,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HDONG\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\37774\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
+      "projectUniqueName": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
       "projectName": "EasyLogger.DbStorage",
-      "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
-      "packagesPath": "C:\\Users\\HDONG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\obj\\",
+      "projectPath": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj",
+      "packagesPath": "C:\\Users\\37774\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.DbStorage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\HDONG\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\37774\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -237,7 +237,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

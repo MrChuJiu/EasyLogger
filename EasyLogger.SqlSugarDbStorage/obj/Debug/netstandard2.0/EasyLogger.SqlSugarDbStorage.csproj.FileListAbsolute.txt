@@ -44,3 +44,16 @@ C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.pdb
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.Model.dll
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.Model.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.deps.json
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.DbStorage.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.Model.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.DbStorage.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\bin\Debug\netstandard2.0\EasyLogger.Model.pdb
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.csprojAssemblyReference.cache
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.AssemblyInfoInputs.cache
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.AssemblyInfo.cs
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.csproj.CopyComplete
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.dll
+C:\Users\37774\Desktop\文章\EasyLogger\EasyLogger.SqlSugarDbStorage\obj\Debug\netstandard2.0\EasyLogger.SqlSugarDbStorage.pdb

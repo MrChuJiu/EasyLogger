@@ -59,7 +59,7 @@ namespace EasyLogger.Api
             #endregion
 
             #region SqlSugar
-            services.AddScoped<IDynamicLinkBase, SqlSugarDynamicLink>();
+            services.AddSingleton<IDynamicLinkBase, SqlSugarDynamicLink>();
             // 改造一下把 自己的注入部分封装起来
             var defaultDbPath = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), $"{Configuration["EasyLogger:DbName"]}.db");
             services.AddSqlSugarDbStorage(new SqlSugarSetting()
@@ -94,17 +94,27 @@ namespace EasyLogger.Api
             services.AddControllers();
 
 
+            
+
             IocManager.Build(services, Configuration);
+            //services.AddTransient<Test1>();
+            //var ddd= services.BuildServiceProvider();
+            //var aaa= ddd.GetRequiredService<Test1>();
+            //services.AddTransient<Test2>();
+            //var aaaa= ddd.GetRequiredService<Test2>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            IocManager.ServiceProvider = app.ApplicationServices;
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+      
             app.UseHttpsRedirection();
 
             #region Swagger
@@ -128,7 +138,24 @@ namespace EasyLogger.Api
             //    var sugarClient = sqlStorage.GetByName(null, SqlSugarDbStorageConsts.DefaultProviderName).Sugar;
             //    Console.WriteLine("查看sugarClient");
             //});
+            //app.Use(async (context, next) =>
+            //{
+            //    var DbName = $"{IocManager.Configuration["EasyLogger:DbName"]}-2020-08";
+            //    var dbPathName = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), DbName + ".db");
 
+            //    IocManager.ServiceProvider.AddSqlSugarDatabaseProvider(new SqlSugarSetting()
+            //    {
+            //        Name = DbName,
+            //        ConnectionString = @$"Data Source={dbPathName}",
+            //        DatabaseType = DbType.Sqlite,
+            //        LogExecuting = (sql, pars) =>
+            //        {
+            //            Console.WriteLine($"sql:{sql}");
+            //        }
+            //    });
+
+            //    await next.Invoke();
+            //});
 
             app.UseEndpoints(endpoints =>
             {
@@ -139,13 +166,27 @@ namespace EasyLogger.Api
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-
+     
             //builder.RegisterType<SqlSugarDynamicLinkAop>();//可以直接替换其他拦截器
             builder.RegisterType<SqlSugarDynamicLink>().As<IDynamicLinkBase>().EnableClassInterceptors();
             //builder.RegisterType<LoggerController>().As<ControllerBase>().EnableInterfaceInterceptors();
-            builder.Register(c => new SqlSugarDynamicLinkAop());
+            builder.RegisterType<SqlSugarDynamicLinkAop>();
 
         }
 
+    }
+
+    public class Test1 {
+        public Test1() { 
+        
+        }
+    }
+
+    public class Test2
+    {
+        public Test2()
+        {
+
+        }
     }
 }

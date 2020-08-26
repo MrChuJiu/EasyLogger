@@ -9,9 +9,9 @@ namespace EasyLogger.Api.EasyTools
 {
     public class IocManager
     {
-        public static IServiceCollection Services { get; private set; }
+        public static IServiceCollection Services { get;  set; }
 
-        public static IServiceProvider ServiceProvider { get; private set; }
+        public static IServiceProvider ServiceProvider { get;  set; }
 
         public static IConfiguration Configuration { get; private set; }
 
