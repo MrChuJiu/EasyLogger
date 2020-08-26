@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac.Extras.DynamicProxy;
 using AutoMapper;
+using EasyLogger.Api.AOP;
 using EasyLogger.Api.Dtos;
 using EasyLogger.Api.Dtos.EasyLoggerProjectDto;
+using EasyLogger.Api.EasyTools.DynamicLink;
 using EasyLogger.DbStorage.Interface;
 using EasyLogger.Model;
 using EasyLogger.SqlSugarDbStorage;
@@ -21,11 +24,13 @@ namespace EasyLogger.Api.Controllers
     {
         private readonly ISqlSugarRepository<EasyLoggerProject,int> _repository;
         private readonly IMapper _mapper;
+        private readonly IDynamicLinkBase _linkBase;
 
-        public ProjectController(ISqlSugarRepository<EasyLoggerProject, int> repository, IMapper mapper)
+        public ProjectController(ISqlSugarRepository<EasyLoggerProject, int> repository, IMapper mapper, IDynamicLinkBase linkBase)
         {
             _repository = repository;
             _mapper = mapper;
+            _linkBase = linkBase;
         }
         /// <summary>
         /// 获取项目列表
@@ -35,6 +40,7 @@ namespace EasyLogger.Api.Controllers
         [HttpPost("GetEasyLoggerProjectAsync")]
         public async Task<PagedResultDto<EasyLoggerProjectListDto>> GetEasyLoggerProjectAsync(EasyLoggerProjectInput input)
         {
+           
             // 定义返回参数
             var result = new PagedResultDto<EasyLoggerProjectListDto>();
             var total = 0;

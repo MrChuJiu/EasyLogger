@@ -387,8 +387,6 @@ C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\EasyLogger.SqlSugarDbStorage.pdb
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\EasyLogger.DbStorage.pdb
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.csprojAssemblyReference.cache
-C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.AssemblyInfoInputs.cache
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.AssemblyInfo.cs
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.RazorTargetAssemblyInfo.cache
@@ -399,3 +397,9 @@ C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.pdb
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\EasyLogger.Model.dll
 C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\EasyLogger.Model.pdb
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\obj\Debug\netcoreapp3.1\EasyLogger.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\HDONG\Desktop\博客\EasyLogger\EasyLogger.Api\bin\Debug\netcoreapp3.1\Castle.Core.dll

@@ -23,6 +23,11 @@ using SqlSugar;
 using EasyLogger.SqlSugarDbStorage;
 using SqlSugarProvider = EasyLogger.SqlSugarDbStorage.Impl.SqlSugarProvider;
 using EasyLogger.Model;
+using Autofac;
+using EasyLogger.Api.AOP;
+using EasyLogger.Api.EasyTools.DynamicLink;
+using Autofac.Extras.DynamicProxy;
+using EasyLogger.Api.Controllers;
 
 namespace EasyLogger.Api
 {
@@ -54,6 +59,7 @@ namespace EasyLogger.Api
             #endregion
 
             #region SqlSugar
+            services.AddScoped<IDynamicLinkBase, SqlSugarDynamicLink>();
             // 改造一下把 自己的注入部分封装起来
             var defaultDbPath = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), $"{Configuration["EasyLogger:DbName"]}.db");
             services.AddSqlSugarDbStorage(new SqlSugarSetting()
@@ -86,6 +92,9 @@ namespace EasyLogger.Api
             #endregion
 
             services.AddControllers();
+
+
+            IocManager.Build(services, Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -126,5 +135,17 @@ namespace EasyLogger.Api
                 endpoints.MapControllers();
             });
         }
+
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+
+            //builder.RegisterType<SqlSugarDynamicLinkAop>();//可以直接替换其他拦截器
+            builder.RegisterType<SqlSugarDynamicLink>().As<IDynamicLinkBase>().EnableClassInterceptors();
+            //builder.RegisterType<LoggerController>().As<ControllerBase>().EnableInterfaceInterceptors();
+            builder.Register(c => new SqlSugarDynamicLinkAop());
+
+        }
+
     }
 }

@@ -4,6 +4,12 @@
         <name>EasyLogger.Api</name>
     </assembly>
     <members>
+        <member name="M:EasyLogger.Api.AOP.DynamicLinkAopBase.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+             AOP的拦截方法
+            </summary>
+            <param name="invocation"></param>
+        </member>
         <member name="M:EasyLogger.Api.Controllers.ProjectController.GetEasyLoggerProjectAsync(EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectInput)">
             <summary>
             获取项目列表
@@ -75,6 +81,91 @@
         <member name="P:EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectListDto.Code">
             <summary>
             系统编码
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordEditDto.ProjectId">
+            <summary>
+            项目Id
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordEditDto.LogType">
+            <summary>
+            类型.自定义标签
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordEditDto.LogState">
+            <summary>
+            状态-成功、失败、警告等
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordEditDto.LogTitle">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordEditDto.LogContent">
+            <summary>
+            内容描述
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordEditDto.LogTime">
+            <summary>
+            在系统中产生的时间
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordInput.ProjectId">
+            <summary>
+            项目Id
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordInput.LogType">
+            <summary>
+            类型.自定义标签
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordInput.LogState">
+            <summary>
+            状态-成功、失败、警告等
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordInput.LogTitle">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordListDto.ProjectId">
+            <summary>
+            项目Id
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordListDto.LogType">
+            <summary>
+            类型.自定义标签
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordListDto.LogState">
+            <summary>
+            状态-成功、失败、警告等
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordListDto.LogTitle">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordListDto.LogContent">
+            <summary>
+            内容描述
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordListDto.LogTime">
+            <summary>
+            在系统中产生的时间
+            </summary>
+        </member>
+        <member name="P:EasyLogger.Api.Dtos.EasyLoggerRecordDto.EasyLoggerRecordListDto.CreateTime">
+            <summary>
+            创建时间
             </summary>
         </member>
     </members>

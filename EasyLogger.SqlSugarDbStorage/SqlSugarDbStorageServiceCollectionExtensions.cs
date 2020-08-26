@@ -27,5 +27,20 @@ namespace EasyLogger.SqlSugarDbStorage
             return services;
 
         }
+
+        public static IServiceProvider AddSqlSugarDatabaseProvider(this IServiceProvider serviceProvider, ISqlSugarSetting dbSetting)
+        {
+            if (dbSetting == null)
+            {
+                throw new ArgumentNullException(nameof(dbSetting));
+            }
+
+            var fSqlProviderStorage = serviceProvider.GetRequiredService<ISqlSugarProviderStorage>();
+
+            fSqlProviderStorage.AddOrUpdate(dbSetting.Name, new SqlSugarProvider(dbSetting));
+
+            return serviceProvider;
+        }
+
     }
 }

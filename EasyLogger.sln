@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyLogger.DbStorage", "Eas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyLogger.SqlSugarDbStorage", "EasyLogger.SqlSugarDbStorage\EasyLogger.SqlSugarDbStorage.csproj", "{75EF50BE-E5F9-4B80-B8E2-54B3088A55B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyLogger.Model", "EasyLogger.Model\EasyLogger.Model.csproj", "{5A047636-380C-4D67-947D-AA687CD3E7AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyLogger.Model", "EasyLogger.Model\EasyLogger.Model.csproj", "{5A047636-380C-4D67-947D-AA687CD3E7AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
