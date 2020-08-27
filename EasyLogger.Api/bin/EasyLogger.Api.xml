@@ -10,6 +10,13 @@
             </summary>
             <param name="invocation"></param>
         </member>
+        <member name="M:EasyLogger.Api.AOP.DynamicLinkAopBase.GetTiemRange(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            获取查询所需的必要条件
+            </summary>
+            <param name="invocation"></param>
+            <returns></returns>
+        </member>
         <member name="M:EasyLogger.Api.Controllers.ProjectController.GetEasyLoggerProjectAsync(EasyLogger.Api.Dtos.EasyLoggerProjectDto.EasyLoggerProjectInput)">
             <summary>
             获取项目列表
@@ -167,30 +174,6 @@
             <summary>
             创建时间
             </summary>
-        </member>
-        <member name="F:EasyLogger.Api.EasyTools.IocManage2.InstanceLazy">
-            <summary>
-            Ioc管理实例
-            </summary>
-        </member>
-        <member name="M:EasyLogger.Api.EasyTools.IocManage2.SetApplicationServiceProvider(System.IServiceProvider)">
-            <summary>
-            设置应用程序服务提供者
-            </summary>
-        </member>
-        <member name="M:EasyLogger.Api.EasyTools.IocManage2.GetService``1">
-            <summary>
-            得到服务
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:EasyLogger.Api.EasyTools.IocManage2.GetLogger``1">
-            <summary>
-            得到日志记录
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
         </member>
     </members>
 </doc>

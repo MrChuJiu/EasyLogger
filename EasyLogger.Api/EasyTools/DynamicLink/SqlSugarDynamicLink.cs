@@ -18,9 +18,6 @@ namespace EasyLogger.Api.EasyTools.DynamicLink
         [DynamicLink]
         public virtual List<DateTime> DynamicLinkOrm(DynamicLinkInput input)
         {
-
-
-
             return TimeTools.GetMonthByList(input.TimeStart.ToString("yyyy-MM"), input.TimeEnd.ToString("yyyy-MM"));
         }
     }

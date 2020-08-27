@@ -17,38 +17,29 @@ namespace EasyLogger.Api.AOP
         /// <param name="invocation"></param>
         public abstract void Intercept(IInvocation invocation);
 
+        /// <summary>
+        /// 获取查询所需的必要条件
+        /// </summary>
+        /// <param name="invocation"></param>
+        /// <returns></returns>
         public DynamicLinkInput GetTiemRange(IInvocation invocation) {
-            var typeName = invocation.TargetType.Name;
-            var methodName = invocation.Method.Name;
             var methodArguments = invocation.Arguments.FirstOrDefault();//获取参数列表
-
             var input = (DynamicLinkInput)methodArguments;
-
-
             return input;
         }
-
 
         public DynamicLinkAttribute GetDynamicLinkAttributeOrNull(MethodInfo methodInfo) {
 
             var attrs = methodInfo.GetCustomAttributes(true).OfType<DynamicLinkAttribute>().ToArray();
-        
             if(attrs.Length > 0) {
-
                 return attrs[0];
             }
-
-
             attrs = methodInfo.DeclaringType.GetTypeInfo().GetCustomAttributes(true).OfType<DynamicLinkAttribute>().ToArray();
             if (attrs.Length > 0)
             {
-
                 return attrs[0];
             }
-
             return null;
-
-
         }
 
 

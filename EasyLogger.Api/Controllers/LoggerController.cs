@@ -37,18 +37,12 @@ namespace EasyLogger.Api.Controllers
         [HttpPost("GetEasyLoggerAsync")]
         [DynamicLink]
         public async Task<PagedResultDto<EasyLoggerRecordListDto>> GetEasyLoggerAsync(EasyLoggerRecordInput input) {
-
             // 获取查询的时间范围
             var dateList = _linkBase.DynamicLinkOrm(input).OrderByDescending(s => s).ToList();
-
             var result = new PagedResultDto<EasyLoggerRecordListDto>();
-
-
             // 查询初始数据库数据
             var projectList = _sqlRepository.GetCurrentSqlSugar().Queryable<EasyLoggerProject>().ToList();
-
             var DbName = IocManager.Configuration["EasyLogger:DbName"];
-
             var entityList = new List<EasyLoggerRecord>();
             // 为跨库查询定义的参数
             int Sumtotal = 0;
@@ -57,26 +51,16 @@ namespace EasyLogger.Api.Controllers
 
 
                 var dayList = TimeTools.GetDayDiff(item.AddDays(1 - DateTime.Now.Day).Date, item.AddDays(1 - DateTime.Now.Day).Date.AddMonths(1).AddSeconds(-1));
-
                 using (_sqlRepository.ChangeProvider($"{DbName}-" + item.ToString("yyyy-MM")))
                 {
-
                     var sqlSugarClient = _sqlRepository.GetCurrentSqlSugar();
-
-
                     var queryables = new List<ISugarQueryable<EasyLoggerRecord>>();
-
                     _sqlRepository.GetCurrentSqlSugar().Queryable<EasyLoggerRecord>();
-
-
                     foreach (var day in dayList)
                     {
                         queryables.Add(sqlSugarClient.Queryable<EasyLoggerRecord>().AS($"EasyLoggerRecord_{day}"));
                     }
-
                     var sqlSugarLogger = sqlSugarClient.UnionAll(queryables);
-
-
                     var data = sqlSugarLogger
                          .Where(s => s.CreateTime >= input.TimeStart)
                          .Where(s => s.CreateTime <= input.TimeEnd)
@@ -86,21 +70,16 @@ namespace EasyLogger.Api.Controllers
                          .WhereIF(input.LogState != null, s => s.LogState == input.LogState)
                          .OrderBy(s => s.CreateTime, OrderByType.Desc)
                          .ToPageList(input.PageIndex, input.PageSize, ref Sumtotal);
-
                     entityList.AddRange(data);
-
                 }
             }
-
             result.Total = Sumtotal;
             result.List = _mapper.Map<List<EasyLoggerRecordListDto>>(entityList);
-
             foreach (var item in result.List)
             {
                 var project = projectList.Where(s => s.Id == item.ProjectId).FirstOrDefault();
                 item.EasyLoggerProject = _mapper.Map<EasyLoggerProjectEditDto>(project);
             }
-
             return result;
         }
 

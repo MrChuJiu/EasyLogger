@@ -51,21 +51,6 @@ namespace EasyLogger.Api.AOP
                 {
                     var DbName = $"{IocManager.Configuration["EasyLogger:DbName"]}-{item.ToString("yyyy-MM")}";
                     var dbPathName = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), DbName + ".db");
-                    //var server = _serviceProvider.GetService<ISqlSugarProviderStorage>();
-                    //var dbSetting = new SqlSugarSetting()
-                    //{
-                    //    Name = DbName,
-                    //    ConnectionString = @$"Data Source={dbPathName}",
-                    //    DatabaseType = DbType.Sqlite,
-                    //    LogExecuting = (sql, pars) =>
-                    //    {
-                    //        Console.WriteLine($"sql:{sql}");
-                    //    }
-                    //};
-                    //server.AddOrUpdate(dbSetting.Name, new SqlSugarProvider1(dbSetting));
-                    //var dd = IocManager.Services.BuildServiceProvider().GetRequiredService<ISqlSugarProviderStorage>();
-                    //dd.AddOrUpdate(dbSetting.Name, new SqlSugarProvider1(dbSetting));
-
 
                     IocManager.ServiceProvider.AddSqlSugarDatabaseProvider(new SqlSugarSetting()
                     {

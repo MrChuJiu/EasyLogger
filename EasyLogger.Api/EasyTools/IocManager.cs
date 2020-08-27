@@ -33,6 +33,9 @@ namespace EasyLogger.Api.EasyTools
 
         public static void SetServiceProvider(IServiceProvider serviceProvider)
         {
+            if (ServiceProvider == null) {
+                return;
+            }
             ServiceProvider = serviceProvider;
         }
 
