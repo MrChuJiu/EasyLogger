@@ -96,7 +96,7 @@ namespace EasyLogger.Api
 
             
 
-            IocManager.Build(services, Configuration);
+            IocManager.SetConfiguration(Configuration);
             //services.AddTransient<Test1>();
             //var ddd= services.BuildServiceProvider();
             //var aaa= ddd.GetRequiredService<Test1>();
@@ -107,8 +107,8 @@ namespace EasyLogger.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
-            IocManager.ServiceProvider = app.ApplicationServices;
+            IocManager.SetServiceProvider(app.ApplicationServices);
+            //IocManager.ServiceProvider = app.ApplicationServices;
 
             if (env.IsDevelopment())
             {

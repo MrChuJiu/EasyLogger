@@ -9,18 +9,33 @@ namespace EasyLogger.Api.EasyTools
 {
     public class IocManager
     {
-        public static IServiceCollection Services { get;  set; }
+        public static IServiceCollection Services { get; private set; }
 
-        public static IServiceProvider ServiceProvider { get;  set; }
+        public static IServiceProvider ServiceProvider { get; private set; }
 
         public static IConfiguration Configuration { get; private set; }
 
-        public static IServiceProvider Build(IServiceCollection serviceDescriptors, IConfiguration configuration)
+        static IocManager()
         {
-            Services = serviceDescriptors;
+            Services = new ServiceCollection();
+        }
+
+        public static IServiceProvider Build()
+        {
             ServiceProvider = Services.BuildServiceProvider();
-            Configuration = configuration;
             return ServiceProvider;
         }
+
+        public static void SetConfiguration(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public static void SetServiceProvider(IServiceProvider serviceProvider)
+        {
+            ServiceProvider = serviceProvider;
+        }
+
+
     }
 }

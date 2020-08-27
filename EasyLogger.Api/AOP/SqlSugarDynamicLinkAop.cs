@@ -16,15 +16,10 @@ using SqlSugarProvider1 = EasyLogger.SqlSugarDbStorage.Impl.SqlSugarProvider;
 
 namespace EasyLogger.Api.AOP
 {
-    public class SqlSugarDynamicLinkAop: DynamicLinkAopBase
+    public class SqlSugarDynamicLinkAop : DynamicLinkAopBase
     {
-        private readonly IServiceProvider _serviceProvider = null;
+        private readonly IServiceProvider _serviceProvider;
 
-        public SqlSugarDynamicLinkAop(IServiceProvider serviceProvider) {
-
-            _serviceProvider = serviceProvider;
-            serviceProvider
-        }
 
         public override void Intercept(IInvocation invocation)
         {
@@ -45,7 +40,8 @@ namespace EasyLogger.Api.AOP
             {
                 invocation.Proceed();//直接执行被拦截方法
             }
-            else {
+            else
+            {
 
                 var input = this.GetTiemRange(invocation);
 
@@ -56,19 +52,19 @@ namespace EasyLogger.Api.AOP
                     var DbName = $"{IocManager.Configuration["EasyLogger:DbName"]}-{item.ToString("yyyy-MM")}";
                     var dbPathName = Path.Combine(PathExtenstions.GetApplicationCurrentPath(), DbName + ".db");
                     //var server = _serviceProvider.GetService<ISqlSugarProviderStorage>();
-                    var dbSetting = new SqlSugarSetting()
-                    {
-                        Name = DbName,
-                        ConnectionString = @$"Data Source={dbPathName}",
-                        DatabaseType = DbType.Sqlite,
-                        LogExecuting = (sql, pars) =>
-                        {
-                            Console.WriteLine($"sql:{sql}");
-                        }
-                    };
+                    //var dbSetting = new SqlSugarSetting()
+                    //{
+                    //    Name = DbName,
+                    //    ConnectionString = @$"Data Source={dbPathName}",
+                    //    DatabaseType = DbType.Sqlite,
+                    //    LogExecuting = (sql, pars) =>
+                    //    {
+                    //        Console.WriteLine($"sql:{sql}");
+                    //    }
+                    //};
                     //server.AddOrUpdate(dbSetting.Name, new SqlSugarProvider1(dbSetting));
-                    var dd = IocManager.Services.BuildServiceProvider().GetRequiredService<ISqlSugarProviderStorage>();
-                    dd.AddOrUpdate(dbSetting.Name, new SqlSugarProvider1(dbSetting));
+                    //var dd = IocManager.Services.BuildServiceProvider().GetRequiredService<ISqlSugarProviderStorage>();
+                    //dd.AddOrUpdate(dbSetting.Name, new SqlSugarProvider1(dbSetting));
 
 
                     IocManager.ServiceProvider.AddSqlSugarDatabaseProvider(new SqlSugarSetting()
@@ -81,7 +77,6 @@ namespace EasyLogger.Api.AOP
                             Console.WriteLine($"sql:{sql}");
                         }
                     });
-                    IocManager.Services.BuildServiceProvider();
 
                 }
 
@@ -89,7 +84,7 @@ namespace EasyLogger.Api.AOP
                 invocation.Proceed();//直接执行被拦截方法
             }
 
-          
+
         }
     }
 }

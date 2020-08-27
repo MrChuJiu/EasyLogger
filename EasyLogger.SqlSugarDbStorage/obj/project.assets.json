@@ -1745,12 +1745,11 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1842,12 +1841,11 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4378,41 +4376,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\37774\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\HDONG\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
+      "projectUniqueName": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
       "projectName": "EasyLogger.SqlSugarDbStorage",
-      "projectPath": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
-      "packagesPath": "C:\\Users\\37774\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\obj\\",
+      "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\EasyLogger.SqlSugarDbStorage.csproj",
+      "packagesPath": "C:\\Users\\HDONG\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.SqlSugarDbStorage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\37774\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\HDONG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj": {
-              "projectPath": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj"
+            "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj": {
+              "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.DbStorage\\EasyLogger.DbStorage.csproj"
             },
-            "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.Model\\EasyLogger.Model.csproj": {
-              "projectPath": "C:\\Users\\37774\\Desktop\\文章\\EasyLogger\\EasyLogger.Model\\EasyLogger.Model.csproj"
+            "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.Model\\EasyLogger.Model.csproj": {
+              "projectPath": "C:\\Users\\HDONG\\Desktop\\博客\\EasyLogger\\EasyLogger.Model\\EasyLogger.Model.csproj"
             }
           }
         }
@@ -4451,7 +4449,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
